@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Anusic Music Web</title>
+</head>
+<body>
+     <!--Menu encabezado-->
+     <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Anusic music web</a>
+            </div>
+            <nav class="" id="nav">
+                <ul>
+                    <li><a href="index.html">Sobre Nosotros</a></li>
+                    <li><a href="#agregar">Agregar/Almacenar</a></li>
+                    <li><a href="#buscar">Buscar</a></li>
+                    <li><a href="#visualizar">Visualizar</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!--Seccion Sobre Nosotros-->
+    <section class="inicio" id="inicio">
+        <div class="nosotros">
+            <h1>Sobre Nosotros</h1>
+            <p>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Voluptas libero hic ab dicta, nam ipsum necessitatibus animi aliquid,<br> neque voluptatibus maiores perspiciatis soluta? <br> Eligendi eaque beatae tempora praesentium incidunt maiores.</span>
+            </p>
+            <div class="imagen">
+                <img src="/img/Default_Create_an_image_for_a_music_website_reminiscent_of_Sou_1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Agregar-->
+    <section class="container agregar" id="agregar">
+        <h2>Agregar canciones: </h2>
+        <input type="text" id="AgregarNombre" placeholder="Nombre">
+        <input type="text" id="Genero" placeholder="Género">
+        <input type="text" id="Autor" placeholder="Autor">
+        <button id="btn-agregar">Agregar</button>
+    </section>
+
+    <!-- Busqueda -->
+    <section class="container buscar" id="buscar">
+        <h2>Buscar Canción: </h2>
+        <div class="buscar-wrapper">
+            <input type="text" id="busqueda" placeholder="Nombre de la canción">
+            <button id="btn-buscar">Buscar</button>
+        </div>
+        <div class="resultados" id="resultadosBusqueda"></div>
+    </section>
+
+    <section class="container buscarmin" id="buscarmin">
+        <h2>Buscar (valor min)</h2>
+        <div class="buscar-wrapper">
+            <button class="min" id="btn-min">Buscar</button>
+        </div>
+        <div class="resultados" id="busquedaMin"></div>
+    </section>
+
+    <section class="container buscarmax" id="buscarmax">
+        <h2>Buscar (valor max)</h2>
+        <div class="buscar-wrapper">
+            <button class="max" id="btn-max">Buscar</button>
+        </div>
+        <div class="resultados" id="busquedaMax"></div>
+    </section>
+
+    <!-- Visualizar -->
+    <section class="container visualizar" id="visualizar">
+        <h2>Visualizar todas tus canciones: </h2>
+        <div class="resultados" id="visualizar">Presiona clic para ver las canciones.</div>
+    </section>
+     <!--Footer-->
+     <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <!-- Incluir scripts -->
+    <script type="module" src="src/controllers/script.js"></script>
+</body>
+</html>
